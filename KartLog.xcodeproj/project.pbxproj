@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65CB998C1788C08D0063FB92 /* KLChassi.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CB998B1788C08D0063FB92 /* KLChassi.m */; };
+		65CB998E1788C8970063FB92 /* InitialDesign in Resources */ = {isa = PBXBuildFile; fileRef = 65CB998D1788C8970063FB92 /* InitialDesign */; };
 		65F4FE8817877D5500BE0D3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4FE8717877D5500BE0D3D /* UIKit.framework */; };
 		65F4FE8A17877D5500BE0D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4FE8917877D5500BE0D3D /* Foundation.framework */; };
 		65F4FE8C17877D5500BE0D3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4FE8B17877D5500BE0D3D /* CoreGraphics.framework */; };
@@ -19,9 +21,14 @@
 		65F4FEA117877D5500BE0D3D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F4FE9F17877D5500BE0D3D /* MainStoryboard_iPhone.storyboard */; };
 		65F4FEA417877D5500BE0D3D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F4FEA217877D5500BE0D3D /* MainStoryboard_iPad.storyboard */; };
 		65F4FEA717877D5500BE0D3D /* KLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4FEA617877D5500BE0D3D /* KLViewController.m */; };
+		65F4FEAE17877D8B00BE0D3D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4FEAD17877D8B00BE0D3D /* CoreData.framework */; };
+		65F4FED017877FA800BE0D3D /* KartModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65F4FECE17877FA800BE0D3D /* KartModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65CB998A1788C08D0063FB92 /* KLChassi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLChassi.h; sourceTree = "<group>"; };
+		65CB998B1788C08D0063FB92 /* KLChassi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLChassi.m; sourceTree = "<group>"; };
+		65CB998D1788C8970063FB92 /* InitialDesign */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InitialDesign; sourceTree = "<group>"; };
 		65F4FE8417877D5500BE0D3D /* KartLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KartLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F4FE8717877D5500BE0D3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65F4FE8917877D5500BE0D3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +46,8 @@
 		65F4FEA317877D5500BE0D3D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		65F4FEA517877D5500BE0D3D /* KLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLViewController.h; sourceTree = "<group>"; };
 		65F4FEA617877D5500BE0D3D /* KLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLViewController.m; sourceTree = "<group>"; };
+		65F4FEAD17877D8B00BE0D3D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		65F4FECF17877FA800BE0D3D /* KartModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KartModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F4FEAE17877D8B00BE0D3D /* CoreData.framework in Frameworks */,
 				65F4FE8817877D5500BE0D3D /* UIKit.framework in Frameworks */,
 				65F4FE8A17877D5500BE0D3D /* Foundation.framework in Frameworks */,
 				65F4FE8C17877D5500BE0D3D /* CoreGraphics.framework in Frameworks */,
@@ -55,9 +65,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65CB99891788C01B0063FB92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65CB998A1788C08D0063FB92 /* KLChassi.h */,
+				65CB998B1788C08D0063FB92 /* KLChassi.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		65F4FE7B17877D5500BE0D3D = {
 			isa = PBXGroup;
 			children = (
+				65F4FECE17877FA800BE0D3D /* KartModel.xcdatamodeld */,
+				65CB998D1788C8970063FB92 /* InitialDesign */,
+				65F4FEAD17877D8B00BE0D3D /* CoreData.framework */,
 				65F4FE8D17877D5500BE0D3D /* KartLog */,
 				65F4FE8617877D5500BE0D3D /* Frameworks */,
 				65F4FE8517877D5500BE0D3D /* Products */,
@@ -86,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				65F4FE9617877D5500BE0D3D /* KLAppDelegate.h */,
+				65CB99891788C01B0063FB92 /* Model */,
 				65F4FE9717877D5500BE0D3D /* KLAppDelegate.m */,
 				65F4FE9F17877D5500BE0D3D /* MainStoryboard_iPhone.storyboard */,
 				65F4FEA217877D5500BE0D3D /* MainStoryboard_iPad.storyboard */,
@@ -168,6 +191,7 @@
 				65F4FE9E17877D5500BE0D3D /* Default-568h@2x.png in Resources */,
 				65F4FEA117877D5500BE0D3D /* MainStoryboard_iPhone.storyboard in Resources */,
 				65F4FEA417877D5500BE0D3D /* MainStoryboard_iPad.storyboard in Resources */,
+				65CB998E1788C8970063FB92 /* InitialDesign in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +205,8 @@
 				65F4FE9417877D5500BE0D3D /* main.m in Sources */,
 				65F4FE9817877D5500BE0D3D /* KLAppDelegate.m in Sources */,
 				65F4FEA717877D5500BE0D3D /* KLViewController.m in Sources */,
+				65F4FED017877FA800BE0D3D /* KartModel.xcdatamodeld in Sources */,
+				65CB998C1788C08D0063FB92 /* KLChassi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,8 +339,22 @@
 				65F4FEAC17877D5500BE0D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65F4FECE17877FA800BE0D3D /* KartModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65F4FECF17877FA800BE0D3D /* KartModel.xcdatamodel */,
+			);
+			currentVersion = 65F4FECF17877FA800BE0D3D /* KartModel.xcdatamodel */;
+			path = KartModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 65F4FE7C17877D5500BE0D3D /* Project object */;
 }
