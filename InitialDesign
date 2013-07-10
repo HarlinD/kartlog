@@ -1,4 +1,3 @@
-
 // Beskriver vad app ska kunna göra
 
 // Målet är att samla all information som behövs för att sköta karten
@@ -26,4 +25,8 @@
 // "kart", key, name, model, currEngine, currChassi, sessions, currSession
 // "sessions", key, name, kartkey, sessionkey
 // "session", key, name, date, starttime, endtime, airtemp, maxRPM, CHT, EGT, laps
+
+// När ett träningspass genomförs initieras varje session med en startknapp och avsluas med en stoppknapp alt redigeras manuellt.
+// När sessionen startas, börjar en klocka ticka, varvknapp visas, väderinfo hämtas vid varje varvning
+// När sessionen avslutas, stoppas klockan, antal varv summeras
 
