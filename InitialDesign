@@ -15,16 +15,25 @@
 // Grunddata sida för registrera grunddata om karten uppdelat i chassi, motor, däck, säte
 
 // Data sparas med stöd av Core Data alt SQL Lite
+
+En kart är uppbyggd av ett chassi med ingående delar som kan justeras såsom däck, caster, camber, toe in/out, kingpin, däckavstånd
+Till karten finns en motor och förgasare. Förgasare kan justeras på fler punkter såsom lågfart, högfart, pop-off
+
+En kart kan köras av flera olika förare, kan ha flera olika motorer, däck, inställningar mellan körningar / sessioner
+// ett pass består av flera sessioner av körning på banan. samma kart används hela tiden
+// För varje session kompletteras med info om väder, förare, motor, motorinställningar, förgasarinställningar, däckinställningar, chassiinställningar
+
 // Tabeller som behövs är
 
 // "driver" , key, name, birthday, sex, weight, length
 // "engine", key, name, model, built, built by, carbmodel, clutch, currEngingSetting, currRunTime, totalRunTime
-// "engineSetting", key, name, driveGear, rearGear, highSpeed, lowSpeed, maxRPM
+// "engineSetting", key, name, driveGear, rearGear, highSpeed, lowSpeed, popoff, maxRPM
 // "chassi", key, name, model, built, built by, weight, length, currChassiSetting
-// "chassiSetting", key, name, lfTyreModel, lrTyreModel, rfTyreModel, rrTyreModel,
-// "kart", key, name, model, currEngine, currChassi, sessions, currSession
-// "sessions", key, name, kartkey, sessionkey
-// "session", key, name, date, starttime, endtime, airtemp, maxRPM, CHT, EGT, laps
+// "chassiSetting", key, name, lfTyreModel, lrTyreModel, rfTyreModel, rrTyreModel, toeinout, caster, camber, kingpin
+// "kart", key, name, model, currEngine, currChassi
+// "pass", key, name, kartkey, sessionkey, date, track
+// "track", key, name, position, remarks
+// "session", key, name, driver, enginesetting, chassisetting, starttime, endtime, airtemp, maxRPM, CHT, EGT, laps
 
 // När ett träningspass genomförs initieras varje session med en startknapp och avsluas med en stoppknapp alt redigeras manuellt.
 // När sessionen startas, börjar en klocka ticka, varvknapp visas, väderinfo hämtas vid varje varvning
