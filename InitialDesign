@@ -15,6 +15,8 @@
 // Grunddata sida för registrera grunddata om karten uppdelat i chassi, motor, däck, säte
 
 // Data sparas med stöd av Core Data alt SQL Lite
+// Ett team består av förare, mekaniker, kartar, utrustning, reservdelar.
+Teamet genomför ett antal pass (träning eller tävling)
 
 En kart är uppbyggd av ett chassi med ingående delar som kan justeras såsom däck, caster, camber, toe in/out, kingpin, däckavstånd
 Till karten finns en motor och förgasare. Förgasare kan justeras på fler punkter såsom lågfart, högfart, pop-off
